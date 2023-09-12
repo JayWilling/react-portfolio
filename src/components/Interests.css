@@ -1,0 +1,21 @@
+.interestCard {
+    animation: bob 5s 0s ease-in-out infinite;
+}
+
+@keyframes bob {
+	0% {
+        rotate: 0deg;
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+        rotate: 0deg;
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+    100% {
+        rotate: 0deg;
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}

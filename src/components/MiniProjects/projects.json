@@ -1,0 +1,124 @@
+[{
+    "id": 0,
+    "year": "2020",
+    "title": "Note System",
+    "description":
+        "An experimental arpeggiator visualisation using solar systems as instruments. Originally built using Processing for Java. Conversion to JavaScript introduced too much overhead with P5.js (which is why you can't run it in the browser). However, feel free to download and have a play around with the Java version instead!",
+    "link": "https://www.google.com",
+    "icon": "fa-earth-americas",
+    "images": ["DSC01958.jpg"],
+    "backgroundColour": "#F18F01",
+    "languages": ["Java", "JavaScript"],
+    "technologies": ["Processing", "P5.js"]
+},
+{
+    "id": 1,
+    "year": "2023",
+    "title": "Instrument Education Tool",
+    "description":
+        "A tool for monophonic music transcription as a way to help early instrument learners with the practice of scales and simple exercises. This was developed as part of my honours thesis, making use of more tried and tested algorithms.",
+    "link": "https://www.google.com",
+    "icon": "fa-guitar",
+    "images": ["DSC00305-small.jpg"],
+    "backgroundColour": "#B0413E",
+    "languages": ["Python"],
+    "technologies": ["Librosa", "Essentia"]
+},
+{
+    "id": 2,
+    "year": "2020",
+    "title": "Vehicle and Numberplate Recognition",
+    "description":
+        "Developed as an introduction to Artificial Intelligence Andrew Ng's coursera course provided a solid basis for vehicle detection. Numberplate detection and transcription was an additional feature, functioning best with sharp images.",
+    "link": "https://www.google.com",
+    "icon": "fa-car",
+    "images": ["DSC00305-small.jpg"],
+    "backgroundColour": "#772D8B",
+    "languages": ["Python"],
+    "technologies": ["Keras"]
+},
+{
+    "id": 3,
+    "year": "2021",
+    "title": "Terrain Generation",
+    "description":
+        "The project utilises 'randomised' noise maps to construct a 2-dimensional height map, further building a 3-dimensional mesh for use in videogame level design. This was a fun little introduction to Unity and dynamic level-design.",
+    "link": "https://www.google.com",
+    "icon": "fa-mountain",
+    "images": ["DSC00305-small.jpg"],
+    "backgroundColour": "#00BFB2",
+    "languages": ["C#"],
+    "technologies": ["Unity"]
+},
+{
+    "id": 4,
+    "year": "2021",
+    "title": "Puzzle Box",
+    "description": "Moving from the digital into the real world. Working in a team of 8, I helped design, build and develop a prototype 'puzzle box' incorporating Arudino's, a Raspberry pi and lots of cardboard. It featured a physical marble maze with trap doors acting as the main method of traversal through the games on the box. Other games included Snake, ..., ...",
+    "link": "",
+    "icon": "fa-puzzle-piece",
+    "images": ["DSC00305-small.jpg"],
+    "backgroundColour": "#F18F01",
+    "languages": ["Python"],
+    "technologies": ["Arduino"]
+},
+{
+    "id": 5,
+    "year": "2021",
+    "title": "Satellite Image Layerwise Relevance Propagation (LRP)",
+    "description": "Before Google came out with Explainable Artificial Intelligence (XAI), I explored the applicibility of some (now dated) methods of providing feedback on Artificial Intelligence models through the categorisation of satellite images. Whilst it did provide some additional information as to what occurred behind the scenes. However, highlighting pixels on a complex image (such as that taken by a satellite) ultimately appears random in nature to the human eye. As with most things machine learning, it's performance is heavily dependent upon the quality of the input data.",
+    "link": "",
+    "icon": "fa-satellite",
+    "images": ["DSC00305-small.jpg"],
+    "backgroundColour": "#03312E",
+    "languages": ["Python"],
+    "technologies": ["Arduino"]
+},
+{
+    "id": 6,
+    "year": "2022",
+    "title": "Novulis - The Reading Companion",
+    "description": "Developed in a group of 6, I helped design and develop a Minimum Viable Product (MVP) of a reading companion mobile application. The project explored the notion of gamifying and digitising traditional book clubs, following a 'space' theme. Book clubs could be formed with friends with club goals being set. Finishing goals and reading certain books would unlock trinkets, spaceships and other customisable options to show off to other readers. I took the project an extra few steps by integrating the users personal library with the Google Books API and developing a functional prototype using Android Studio.",
+    "link": "",
+    "icon": "fa-book",
+    "images": ["DSC00305-small.jpg"],
+    "backgroundColour": "#90A959",
+    "languages": ["Python"],
+    "technologies": ["Arduino"]
+},
+{
+    "id": 7,
+    "year": "2018",
+    "title": "Maze",
+    "description": "Sometimes even the simplest things in computer science can provide us with some fun results. Originally built as a text-based game to run in the console, I have since ported the maze generation over to run in the browser.",
+    "link": "",
+    "icon": "fa-route",
+    "images": ["DSC00305-small.jpg"],
+    "backgroundColour": "#FF5376",
+    "languages": ["C++", "Typescript"],
+    "technologies": []
+},
+{
+    "id": 8,
+    "year": "2017",
+    "title": "Hoarder",
+    "description": "My first full project which introduced a backend database through Microsoft Access. Hoarder was a basic inventory management system providing the user with some basic summary statistics on expenses and profits along with supplier management.",
+    "link": "",
+    "icon": "fa-box",
+    "images": ["DSC00305-small.jpg"],
+    "backgroundColour": "#B14AED",
+    "languages": ["VB.NET"],
+    "technologies": ["Microsoft Access"]
+},
+{
+    "id": 9,
+    "year": "2016",
+    "title": "On-Time Table",
+    "description": "A proper introduction into the world of programming through a school timetable management tool, for use by students. It allowed the user to input multiple subjects and teachers, manipulating the overall schedule. It worked but was far too bare to be more useful than the traditional pen and paper timetable we used.",
+    "link": "",
+    "icon": "fa-calendar-xmark",
+    "images": ["DSC00305-small.jpg"],
+    "backgroundColour": "#F95210",
+    "languages": ["VB.NET"],
+    "technologies": []
+}]

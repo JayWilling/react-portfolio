@@ -1,0 +1,245 @@
+.profile {
+    display: flex;
+    overflow: hidden;
+    height: 15vw;
+    width: 100%;
+    max-width: 15vw;
+    /* border-radius: 50%; */
+    aspect-ratio: 1;
+    /* align-items: center;
+    align-content: center; */
+    /* justify-content: center; */
+    position: relative;
+}
+
+.profile-img-container {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    aspect-ratio: 1;
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+.profile-img {
+    display: flex;
+    /* align-items: center; */
+    object-fit: cover;
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    /* border-radius: 50%; */
+    transition: all 0.5s ease 0s;
+    backface-visibility: hidden;
+    display: block;
+}
+
+.profile-text-container {
+
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+
+    
+    width: 15vw;
+    /* height: auto; */
+}
+
+.profile-text {
+    color: white;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.profile:hover .profile-text-container {
+    opacity: 1;
+}
+
+.profile:hover .profile-img {
+    transform: scale(1.25);
+    opacity: 0.3;
+}
+
+.licenceCardContainer {
+    position: relative;
+}
+
+.licenceCard {
+    animation: float 6s 0s ease-in-out infinite;
+}
+
+.licenceCard:hover {
+    animation: none;
+}
+
+@keyframes float {
+	0% {
+        rotate: 0deg;
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+    12.5% {
+        rotate: 1deg;
+    }
+	25% {
+        rotate: 0deg;
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+    37.5% {
+        rotate: -1deg;
+    }
+	50% {
+        rotate: 0deg;
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+    62.5% {
+        rotate: 1deg;
+    }
+    75% {
+        rotate: 0deg;
+        box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+        transform: translatey(-20px);
+    }
+    87.5% {
+        rotate: -1deg;
+    }
+    /* 100% {
+        rotate: 0deg;
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        transform: translatey(0px);
+    } */
+}
+
+.wallet .licenceCardContainer {
+    transition: all 0.1s ease 0s;
+}
+
+.wallet .licenceCardContainer:hover {
+    transform: translateY(-30px) rotate(3deg);
+    transition: all 0.1s ease 0s;
+    /* padding-top: 50px; */
+}
+
+.licenceHeader {
+    display: flex;
+    flex-direction: column;
+    background-color: #B0413E;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 100px;
+    padding-top: 10px;
+}
+
+.cardShine {
+    z-index: 1;
+    height: 100%;
+    border-radius: 5px;
+    transition: all 0.1s ease 0s;
+}
+
+.walletContainer {
+    position: relative;
+    width: 20vw;
+    top: -25%;
+    /* left: 75%; */
+    right: 0%;
+}
+
+.wallet {
+    overflow: visible;
+    background-color: #59260B;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+}
+
+.walletCard {
+    /* overflow: hidden;
+    height: 100px;
+    top: 80%; */
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    top: 20%;
+    background-color: #59260B;
+    z-index: 1;
+}
+
+.embossed{
+    color: #451e09;
+    font-size: 30px;
+    font-family: Futura;
+    /* background-color: #59260B; */
+
+    text-shadow: -1px 0px 0px rgb(156, 156, 156), -1px -1px 0px #934013, 1px 0px 0px #80370f;
+  
+}
+
+.walletCardHolder {
+    position: absolute;
+    width: 100%;
+    background-color: #AF6E4D;
+    overflow: hidden;
+    
+}
+
+.wallet, .walletInner {
+    position: absolute;
+    transition: all 0.3s ease 0s;
+    height: 75vh;
+}
+
+.wallet:hover {
+    transform: translate(-50%) rotate(-5deg);
+    transition: all 0.3s ease 0s;
+}
+
+.blur-load {
+    background-size:cover;
+    background-position: center;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+
+.blur-load:hover {
+    opacity: 0.6;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.blur-load.loaded > img {
+    opacity: 1;
+    transition: all 0.3s ease 0s;
+}
+
+.imageClicked {
+    padding: 3vw;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.blur-load .thumbnail {
+    opacity: 0;
+}
+
+.blur-load > img {
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+    filter: blur(20px);
+}
+
+img {
+    /* width: 100%; */
+    /* border-radius: "xl";
+    border-bottom: 1; */
+    /* display: "inline-block";
+    object-position: "center";
+    object-fit: "cover"; */
+}

@@ -1,0 +1,215 @@
+:root {
+  --backgroundColour: #343943;
+  --minHeaderHeight: 15vh;
+  --maxHeaderHeight: 300px;
+  --headerColour: #282c34;
+  background-color: #282c34;
+}
+
+/* Colour Scheme's
+
+    License: https://coolors.co/282c34-343943-548687-b0413e-473335
+
+*/
+
+@font-face {
+    font-family: 'Roboto Mono', monospace;;
+    src: local('Roboto Mono'), url(./assets/fonts/RobotoMono-VariableFont_wght.ttf) format('ttf');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                                'embedded-opentype', and 'svg' */
+}
+
+p {
+    font-family:'Roboto Mono', monospace;
+}
+
+.app {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  height: 100%;
+  position: relative;
+  /* overflow: hidden; */
+  background-color: #282c34;
+}
+
+.mainButton {
+    /* background-color: #343943; */
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+.mainButton:hover {
+    background-color: #343943;
+}
+
+/* .app-header {
+  background-color: #282c34;
+  min-height: var(--minHeaderHeight);
+  max-height: var(--maxHeaderHeight);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  width: 100%;
+  position: fixed;
+  transition: all 0.3s ease 0s;
+} */
+
+.sidebar-margin {
+    width: 5vw;
+}
+
+.pageContainer-sidebar {
+    /* height: calc(100vh - var(--minHeaderHeight)); */
+    /* height: 100vh;
+    overflow-y: scroll; */
+    /* margin-top: var(--minHeaderHeight); */
+    /* margin-left: 5vw; Sidebar width */
+    /* margin: 5vw; */
+    padding: 5vw;
+    width: 100%;
+    background-color: #343943;
+}
+
+.pageContainer {
+    margin: 0 auto;
+    width: 80%;
+    background-color: #343943;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  background-color: var(--headerColour);
+}
+
+.app-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.photo-gallery {
+  -moz-column-count: 3;
+  -webkit-column-count: 3;
+  -moz-column-width: 33%;
+  -webkit-column-width: 33%;
+  column-count: 3;
+  /* -moz-column-gap: 10px;
+  -webkit-column-gap: 10px; */
+  column-gap: 0px;
+  column-width: 33%;
+  break-after: avoid;
+  /* padding: 10px; */
+  /* display: flex;
+  flex-wrap: wrap; */
+  padding: 5px;
+}
+
+.photos:hover {
+  opacity: 50%;
+}
+
+.photos {
+  margin: 5px 5px 0px 5px;
+  opacity: 100%;
+  transition: all 0.3s ease 0s;
+}
+
+.photos img {
+  width: 100%;
+  height: auto;
+}
+
+.picture {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+  overflow: hidden;
+  z-index: 999;
+}
+
+.picture.open {
+  visibility: visible;
+  opacity: 100;
+  transform: scale(1);
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.picture img {
+  width: auto;
+  height: 100%;
+}
+
+.photoGridRow {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.photoGridColumn {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.photoGridColumn img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+.pureReactCarouselButtonLeft {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    /* background-color: white; */
+}
+
+.pureReactCarouselButtonRight {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    /* background-color: white; */
+}
+
+/* .carousel__inner-slide {
+    height: 50px;
+} */

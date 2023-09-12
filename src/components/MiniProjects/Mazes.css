@@ -1,0 +1,75 @@
+/* .mazeColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.mazeRow {
+    display: grid;
+    height: 10px;
+    width: 10px;
+} */
+
+.mazeCell {
+    height: 10px;
+    width: 10px;
+    background-color: grey;
+}
+
+/* .mazeCell {
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 34px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 34px;
+  } */
+
+
+.mazeCell.mazeWall {
+    background-color: black;
+    box-shadow: 2px 2px 3px;
+    z-index: 1;
+    transition: all 1s 0s ease;
+    animation: flipCorridor 1s 0s ease forwards;
+}
+
+.mazeCell.mazeCorridor {
+    background-color: grey;
+    transition: all 1s 0s ease;
+    animation: flipWall 1s 0s ease-out forwards;
+}
+
+.mazeCell.player {
+    background-color: red;
+}
+
+.mazeCell.finishCell {
+    background-color: green;
+}
+
+@keyframes flipWall {
+    100% {
+        rotate: 90deg;
+    }
+}
+
+@keyframes flipCorridor {
+    100% {
+        rotate: -90deg;
+    }
+}
+
+@keyframes buildWall {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
