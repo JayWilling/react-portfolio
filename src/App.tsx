@@ -120,7 +120,7 @@ function App() {
 						}
 					/>
 					<Route
-						path="/home"
+						path="/"
 						element={
 							<PageWithHeader
 								title="Landing Page"
