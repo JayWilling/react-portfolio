@@ -117,13 +117,11 @@ const Photography = () => {
 			<PictureOverlay />
 			<Box
 				// paddingLeft={"5px"}
-				paddingRight={"10px"}
-				paddingBottom={"10px"}
+				padding={"10px"}
 				w="100%"
 				mx="auto"
 				bg="gray.800"
 				sx={{ columnCount: [1, 2, 3], columnGap: "10px" }}
-				paddingLeft={"10px"}
 			>
 				{imageList.map((imageSrc, index) => {
 					return (
@@ -134,7 +132,7 @@ const Photography = () => {
 								backgroundPosition: "center",
 								backgroundImage: `url(${imageSrc.thumbnail})`,
 								overflow: "hidden",
-								margin: "10px 0px 0px 0px",
+								marginBottom: "10px",
 							}}
 							className="blur-load"
 						>
