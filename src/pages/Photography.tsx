@@ -119,7 +119,8 @@ const Photography = () => {
 				w="100%"
 				mx="auto"
 				bg="gray.800"
-				sx={{ columnCount: [1, 2, 3], columnGap: "5px" }}
+				sx={{ columnCount: [1, 2, 3], columnGap: "10px" }}
+				paddingLeft={"10px"}
 			>
 				{imageList.map((imageSrc, index) => {
 					return (
@@ -128,8 +129,9 @@ const Photography = () => {
 							style={{
 								backgroundSize: "cover",
 								backgroundPosition: "center",
-								// backgroundImage: `url(${imageSrc.thumbnail})`,
+								backgroundImage: `url(${imageSrc.thumbnail})`,
 								overflow: "hidden",
+								margin: "10px 0px 0px 0px",
 							}}
 							className="blur-load"
 						>
@@ -144,7 +146,7 @@ const Photography = () => {
 									objectFit: "cover",
 									objectPosition: "center",
 									zIndex: "1",
-									margin: "10px 5px 5px 5px",
+									// margin: "10px 5px 5px 5px",
 								}}
 								onClick={() => {
 									imageClicked(imageSrc.image);
@@ -158,7 +160,7 @@ const Photography = () => {
 									objectFit: "cover",
 									filter: "blur(10px)",
 									zIndex: "-1",
-									margin: "10px 0px 0px 5px",
+									// margin: "10px 5px 5px 5px",
 									backgroundColor: "white",
 								}}
 							/>
