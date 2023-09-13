@@ -13,6 +13,9 @@ import { Box, ChakraProvider, Flex, Image } from "@chakra-ui/react";
 // To generate smaller thumbnails of each image in cmd:
 // for %i in (*.jpg) do ffmpeg -i "%i" -vf scale=20:-1 "%~ni-small.jpg"
 
+// JPEG Compression
+// for %i in ./*.jpg; do ffmpeg -i "%i" -q:v 10 "%~ni-medium.jpg"
+
 interface imageContainer {
 	image: string;
 	thumbnail: string;
@@ -27,8 +30,8 @@ const loadImages = () => {
 	const imageList: imageContainer[] = [];
 	// const imageList: string[] = [];
 	imageModules.keys().forEach((item, index) => {
-		if (!item.toLowerCase().endsWith("-small.jpg")) {
-			const thumbnailSrc = item.replace(/.jpg|.JPG/, "-small.jpg");
+		if (item.toLowerCase().endsWith("-medium.jpg")) {
+			const thumbnailSrc = item.replace("medium", "small");
 			const newImage: imageContainer = {
 				image: imageModules(item),
 				thumbnail: imageModules(thumbnailSrc),

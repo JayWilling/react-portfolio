@@ -12,10 +12,10 @@ import {
 	ButtonNext,
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
-import imagedsd from "./../assets/photos/DSC01958.jpg";
+// import imagedsd from "./../assets/photos/DSC01958.jpg";
 import { useImage } from "./ImageImporter";
 
-import img1 from "./../assets/photos/DSC01910.jpg";
+// import img1 from "./../assets/photos/DSC01910.jpg";
 
 // Props for the carousel
 interface ImageCarouselProps {
@@ -101,8 +101,6 @@ export function ImageCarousel(props: ImageCarouselProps) {
 	// const [imageList, setImageList] = useState(loadImages());
 	// These are the images used in the slide
 	const cards = [
-		img1,
-		img1,
 		// "https://images.unsplash.com/photo-1612852098516-55d01c75769a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60",
 		// "https://images.unsplash.com/photo-1627875764093-315831ac12f7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60",
 		// "https://images.unsplash.com/photo-1571432248690-7fd6980a1ae2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60",
