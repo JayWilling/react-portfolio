@@ -112,7 +112,7 @@ const Sidebar = (props: {
 				<SidebarItem
 					title="Home"
 					iconName="fa-home"
-					linkLocation="/home"
+					linkLocation="/"
 					isActive
 					isCollapsed={!props.sidebarExpanded && isCollapsed}
 					updateHeader={props.updateHeader}
